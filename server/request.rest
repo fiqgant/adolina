@@ -1,0 +1,69 @@
+// create user
+PATCH http://localhost:7300/users/98c73efe-6d88-49fa-b1bc-2eaba3c23033
+Content-Type: application/json
+
+{
+  "name":"user_updated",
+  "email":"user_updated@gmail.com",
+  "password":"123456",
+  "confPassword":"123456",
+  "company":"adolina_updated",
+  "private_key":"",
+  "role":"user"
+}
+
+###
+//ada
+POST http://localhost:7300/login  
+Content-Type: application/json
+
+{
+  "email":"fiqgant@gmail.com",
+  "password":"1234567"
+}
+
+###
+//user
+GET http://localhost:7300/users/
+
+###
+//me
+get http://localhost:7300/me
+
+###
+//logout
+DELETE http://localhost:7300/logout
+
+###
+// 1 device
+GET http://localhost:7300/device/0eea2184-e3b9-41e8-a1e9-cde854a57839
+
+###
+// all device
+GET http://localhost:7300/device/
+
+###
+// create device
+POST http://localhost:7300/device
+Content-Type: application/json
+
+{
+  "name":"device 4",
+  "id_device":"354657r8t9asshbjy0u08t7r6sdsd5"
+}
+
+###
+// update device
+PATCH http://localhost:7300/device/0eea2184-e3b9-41e8-a1e9-cde854a57839
+Content-Type: application/json
+
+{
+  "name":"device 3 updated",
+  "id_device":"354657r8t9hbjy0usss08t7r6sdsd5"
+}
+
+###
+// delete device
+DELETE http://localhost:7300/device/0eea2184-e3b9-41e8-a1e9-cde854a57839
+
+
