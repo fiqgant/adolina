@@ -69,6 +69,10 @@ const PmGenset1 = db.define('PmGenset1', {
     type: DataTypes.STRING(50),
     allowNull: true,
   },
+  CloudOnline: {
+    type: DataTypes.STRING(255),
+    allowNull: true,
+  },
 }, {
   tableName: 'pmgenset1',
   timestamps: false,

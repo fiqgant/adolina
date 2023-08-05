@@ -149,8 +149,8 @@ const Boiler1 = db.define('Boiler1', {
     type: DataTypes.STRING(255),
     allowNull: true,
   },
-  tes: {
-    type: DataTypes.INTEGER(255),
+  CloudOnline: {
+    type: DataTypes.STRING(255),
     allowNull: true,
   },
 }, {

@@ -85,6 +85,10 @@ const Mupsteam = db.define('Mupsteam', {
     type: DataTypes.STRING(50),
     allowNull: true,
   },
+  CloudOnline: {
+    type: DataTypes.STRING(255),
+    allowNull: true,
+  },
 }, {
   tableName: 'mupsteam',
   timestamps: false,

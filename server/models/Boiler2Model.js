@@ -149,6 +149,10 @@ const Boiler2 = db.define('Boiler2', {
     type: DataTypes.STRING(50),
     allowNull: true,
   },
+  CloudOnline: {
+    type: DataTypes.STRING(255),
+    allowNull: true,
+  },
 }, {
   tableName: 'boiler2',
   timestamps: false,

@@ -21,11 +21,11 @@ const ResTabs = () => {
               Boiler 2
             </a>
           </li>
-          <li className={activeTab === 'klarifikasi' ? 'is-active' : ''}>
+          {/* <li className={activeTab === 'klarifikasi' ? 'is-active' : ''}>
             <a href="#" onClick={() => handleTabClick('klarifikasi')}>
               Klarifikasi
             </a>
-          </li>
+          </li> */}
           <li className={activeTab === 'mupsteam' ? 'is-active' : ''}>
             <a href="#" onClick={() => handleTabClick('mupsteam')}>
               Mupsteam

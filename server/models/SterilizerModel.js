@@ -209,6 +209,10 @@ const Sterilizer = db.define('Sterilizer', {
     type: DataTypes.STRING(50),
     allowNull: true,
   },
+  CloudOnline: {
+    type: DataTypes.STRING(255),
+    allowNull: true,
+  },
 }, {
   tableName: 'sterilizer',
   timestamps: false,

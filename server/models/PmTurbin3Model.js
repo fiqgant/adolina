@@ -69,6 +69,10 @@ const PmTurbin3 = db.define('PmTurbin3', {
     type: DataTypes.STRING(50),
     allowNull: true,
   },
+  CloudOnline: {
+    type: DataTypes.STRING(255),
+    allowNull: true,
+  },
 }, {
   tableName: 'pmturbin3',
   timestamps: false,

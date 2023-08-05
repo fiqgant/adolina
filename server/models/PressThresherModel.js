@@ -197,6 +197,10 @@ const PressThresher = db.define('PressThresher', {
     type: DataTypes.STRING(50),
     allowNull: true,
   },
+  CloudOnline: {
+    type: DataTypes.STRING(255),
+    allowNull: true,
+  },
 }, {
   tableName: 'pressthresher',
   timestamps: false,
